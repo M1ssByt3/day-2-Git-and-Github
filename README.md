@@ -4,7 +4,9 @@
 # Explain the fundamental concepts of version control and why GitHub is a popular tool for managing versions of code. How does version control help in maintaining project integrity?
   Fundamental concepts of version control
     Repository: A repository (or repo) is the database where all the versioned files and their history are stored.
+    
     Commit: A commit is a snapshot of the repository at a particular point in time. It includes changes made to the files and a commit message describing the changes.
+    
     Branch: A branch is a parallel version of a repository. It is contained within the repository but does not affect the primary or master branch, allowing developers to work freely without disrupting the live version.
     Merge: Merging is the process of integrating changes from one branch into another. This is how developers combine their work and resolve conflicts between different versions.
     Clone/Fork: Cloning or forking a repository creates a local copy of the repository on your machine or your own GitHub account, allowing you to experiment without affecting the original project.
