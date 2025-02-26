@@ -153,7 +153,37 @@ Importance of Branching
         And to delete the branch from the remote repository:
                   git push origin --delete new-branch-name
 # Explore the role of pull requests in the GitHub workflow. How do they facilitate code review and collaboration, and what are the typical steps involved in creating and merging a pull request?
+    Pull requests (PRs) are a key feature of GitHub that facilitate collaboration, code review, and structured project development. They allow developers to propose changes to a repository, review modifications before merging, and ensure code quality through discussions and feedback. PRs are especially useful in team-based projects, open-source contributions, and feature development workflows.
 
+  Steps to creating and merging a PR
+      
+      1. Create a Feature Branch Locally >> Before opening a PR, create and switch to a new branch for the changes:
+
+            git checkout -b feature-branch
+
+      2. Make and Commit Changes >> Modify the code, add new features, or fix bugs. Then stage and commit the changes:
+
+            git add .
+            git commit -m "Added new feature"
+
+      3. Push the Branch to GitHub >> Upload the changes to the remote repository:
+
+            git push origin feature-branch
+
+      4. Open a Pull Request on GitHub >> Navigate to the repository on GitHub, click on the "Pull Requests" tab, select "New Pull Request" and choose the feature branch to compare with the main branch. Add a title and description explaining the changes.
+
+      5. Review and Discuss the Changes >> Reviewers check the code, suggest modifications, and leave comments. If changes are required, the contributor can update the PR by committing new changes to the same branch.
+
+      6. Merge the Pull Request >> Once approved, the PR can be merged using one of the following options:
+
+          Merge Commit: Preserves commit history.
+          Squash and Merge: Combines all commits into one, keeping the history clean.
+          Rebase and Merge: Maintains a linear history by reapplying commits on top of the main branch.
+
+      7. Delete the Feature Branch (Optional) >> After merging, the branch can be deleted to keep the repository clean:
+
+          git branch -d feature-branch
+          git push origin --delete feature-branch
 # Discuss the concept of "forking" a repository on GitHub. How does forking differ from cloning, and what are some scenarios where forking would be particularly useful?
 
 # Examine the importance of issues and project boards on GitHub. How can they be used to track bugs, manage tasks, and improve project organization? Provide examples of how these tools can enhance collaborative efforts.
