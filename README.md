@@ -1,7 +1,7 @@
 # se-day-2-git-and-github
 
 
-# Explain the fundamental concepts of version control and why GitHub is a popular tool for managing versions of code. How does version control help in maintaining project integrity?
+# Q1. Explain the fundamental concepts of version control and why GitHub is a popular tool for managing versions of code. How does version control help in maintaining project integrity?
   # Fundamental concepts of version control
     Repository: A repository (or repo) is the database where all the versioned files and their history are stored. 
     Commit: A commit is a snapshot of the repository at a particular point in time. It includes changes made to the files and a commit message describing the changes.
@@ -22,8 +22,19 @@
     Documentation and Issue Tracking: GitHub provides tools for documenting projects and tracking issues, making it easier to manage and improve codebases.
     Integration and Automation: GitHub integrates with various tools and services, such as continuous integration and deployment systems, enhancing the development workflow.
   
-# Describe the process of setting up a new repository on GitHub. What are the key steps involved, and what are some of the important decisions you need to make during this process?
-
+# Q2. Describe the process of setting up a new repository on GitHub. What are the key steps involved, and what are some of the important decisions you need to make during this process?
+  Steps: 1. Having a github account
+         2. Navigate to GitHub’s Repositories Page. Click on the "+" icon in the top-right corner to select "New repository" from the dropdown menu.
+         3. Repository Naming and Description: Naming, description, visibility(private/public) etc, then "Create repository"
+         4. Clone the Repository (optional): if working locally, clone the repository to your machine using a Github provided URL for your new repository. Use the following command in your terminal or command prompt: git clone [repository-url]
+         5. Make Initial Commits (if you didn't initialize with a README you'll need to make your first commit manually as follows.
+              Navigate to your local repository folder.
+              Create a README file (e.g., README.md).
+              Add and commit the file:
+              git add .
+              git commit -m "Initial commit"
+              git push origin main . At this point hanges will be pushed to the main branch on GitHub.
+              
 # Discuss the importance of the README file in a GitHub repository. What should be included in a well-written README, and how does it contribute to effective collaboration?
 
 # Compare and contrast the differences between a public repository and a private repository on GitHub. What are the advantages and disadvantages of each, particularly in the context of collaborative projects?
